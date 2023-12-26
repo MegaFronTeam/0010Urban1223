@@ -1,0 +1,76 @@
+mixin day(date,day)
+	+e.day&attributes(attributes)
+		span= date
+		| #{day}
+
+mixin time(time,cancel)
+	if cancel
+		+e.time--cancel
+			span= time
+			+e.cancel-btn(href="#") Отменить
+	else
+		+e.time.btn.btn-outline-primary(href="#")= time
+
+mixin sSchedule(data)
+	// start sSchedule
+	+b.SECTION.sSchedule.section#sSchedule&attributes(attributes)
+		.container
+			+e.row.row
+				.col-4
+					+input('Выберите дату','date')
+				.col-4.text-center
+					+b.section-title
+						h2 Ноябрь
+			+e.slider-wrap
+				+e.slider.swiper
+					.swiper-wrapper
+						//- -for (var i=1; i <= 30; i++)
+						+e.slide.swiper-slide
+							+day('13','вт').--current
+							+time('09:00')
+							+time('12:00')
+						+e.slide.swiper-slide
+							+day('14','ср')
+							+e.empty Запись недоступна
+						+e.slide.swiper-slide
+							+day('15','чт')
+							+time('11:00')
+							+time('11:30')
+							+time('12:00')
+							+time('12:30')
+						+e.slide.swiper-slide
+							+day('16','пт')
+							+time('13:00')
+							+time('16:00')
+						+e.slide.swiper-slide
+							+day('17','сб')
+							+time('15:00','cancel')
+							+time('15:30')
+							+time('16:00')
+							+time('16:30')
+							+time('17:00')
+						+e.slide.swiper-slide
+							+day('18','вс')
+							+e.empty Запись недоступна
+						+e.slide.swiper-slide
+							+day('19','пн')
+							+time('08:00')
+							+time('09:00')
+							+time('09:30')
+						+e.slide.swiper-slide
+							+day('20','вт')
+							+time('15:00','cancel')
+							+time('15:30')
+							+time('16:00')
+							+time('16:30')
+							+time('17:00')
+						+e.slide.swiper-slide
+							+day('21','ср')
+							+e.empty Запись недоступна
+						+e.slide.swiper-slide
+							+day('22','чт')
+							+time('08:00')
+							+time('09:00')
+							+time('09:30')
+				+arrow
+	// end sSchedule
