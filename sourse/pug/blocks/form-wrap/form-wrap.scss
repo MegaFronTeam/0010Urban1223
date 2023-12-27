@@ -1,12 +1,18 @@
 .form-wrap {
 	&__input-wrap {
 		// @extend .form-group;
-		margin-bottom: rem(15);
+		margin-bottom: rem(5);
+	}
+	&__input-title{
+		font-size: rem(14);
+		margin-bottom: rem(4);
+		display: block;
+		padding-left: rem(16);
 	}
 	&__input {
 		// @extend .form-control;
 		//  outline: 0 !important;
-		resize: none;
+		// resize: none;
 	}
 	&__btn {
 		cursor: pointer;
@@ -15,6 +21,31 @@
 	label {
 		width: 100%;
 		display: block;
+	}
+
+	&__head{
+		margin-bottom: rem(32);
+	}
+	counter-reset: num;
+	&__group{
+		margin-bottom: rem(32);
+	}
+	&__group-title{
+		font-weight: normal;
+		position: relative;
+		padding-left: rem(23);
+		margin-left: rem(8);
+		line-height: calc(24 / 18);
+		margin-bottom: rem(14);
+		&::before {
+			content: counter(num)'.';
+			counter-increment: num;
+			position: absolute;
+			left: 0;
+		}
+	}
+	textarea.form-control{
+		min-height: rem(140);
 	}
 }
 

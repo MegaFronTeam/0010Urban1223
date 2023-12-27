@@ -2,20 +2,23 @@
 	// start .topLine
 	.topLine {
 		 
-	--sPT: #{rem(12)};
-	--sPB: #{rem(12)};
-	// --sTPB: #{rem()};
-	&__container {
-		@include media-breakpoint-down(lg) {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			z-index: 10;
-			background-color: $white;
-		}
+		background-color: #fff;
+		z-index: 4;
+		position: relative;
+		box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+		width: 100%;
+		// --sTPB: #{rem()}
+		--sPT: #{rem(21)};
+		--sPB: #{rem(14)};
+		@include media-breakpoint-down(md) {
+		--sPT: #{rem(13)};
+		--sPB: #{rem(13)};
+		position: fixed;
+		left: 0;
+		bottom: 0;
 	}
 	&__row{
+		align-items: center;
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
 

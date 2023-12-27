@@ -3,15 +3,9 @@
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
 
-	@include media-breakpoint-up(md) {
-
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
-	}
-
-	--sPT: #{rem(80 * .5)};
-	--sPB: #{rem(90 * .5)};
+ 
+	--sPT: #{rem(34)};
+	--sPB: #{rem(34)};
 	--sTPB: #{rem(40 * .5)};
 
 
@@ -39,10 +33,18 @@
 	  //  --carousel-button-svg-stroke-width: 2.5;
 	  //  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
 	}
-	.fancybox__container{
-		
-		--fancybox-bg: rgba(58, 59, 60, 0.77);
-}
+	.fancybox__container {
+		--fancybox-bg: #{rgba($primary,.6)};
+	}
+	.fancybox__content>.f-button.is-close-btn{
+		top: 10px;
+		right: 10px;
+		opacity: 1;
+		--f-button-color :#{$body-color};
+		--f-button-hover-color :#{$body-color};
+		--f-button-width: 30px;
+		--f-button-height: 30px;
+	}
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

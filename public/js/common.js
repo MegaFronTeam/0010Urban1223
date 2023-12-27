@@ -110,6 +110,16 @@ function eventHandler() {
 			},
 		})
 	}
+
+	$(".select-block-wrapper").each(function(){
+		const self = $(this)
+		self.find("select").select2({
+			allowClear: false,
+			dropdownParent: self
+		});
+	})
+
+
 };
 
 if (document.readyState !== 'loading') {

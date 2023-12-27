@@ -2,13 +2,14 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Главная</title>
+		<title>Анкетирование</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
 		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
 		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="libs/select2/css/select2.min.css" rel="stylesheet"/>
 		<link href="css/custom-bootstrap.min.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 		<script>
@@ -24,12 +25,12 @@
 			}
 		</script>
 	</head>
-	<body class="main-page main-page">
+	<body class="bg-gray" data-bg="polling.jpg">
 		<div class="main-wrapper">
 			<script>addBlock(`header`)</script>
 			<div id="headerWrap"></div>
 			<main>
-				<div class="container">
+				<div class="container px-0">
 					<div class="steps">
 						<div class="steps__dd-header d-lg-none">
 							<div class="steps__dd-name">Запись на оценку <span>с 12 дек по 20 дек</span>
@@ -73,10 +74,134 @@
 				<!-- start sPolling-->
 				<section class="sPolling section" id="sPolling">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sPolling</h2>
-						</div>
-						<div class="sPolling__row row">
+						<div class="panel-block">
+							<div class="form-wrap">
+								<form>
+									<div class="form-wrap__head text-center">
+										<h2>Анкетирование</h2>
+									</div>
+									<div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Укажите, пожалуйста, сколько сотрудников находится в&nbsp;Вашем подчинении:
+											</div>
+											<div class="form-wrap__input-wrap form-group">
+												<label><span class="form-wrap__input-title">В прямом</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group">
+												<label><span class="form-wrap__input-title">В функциональном</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Сколько из&nbsp;указанных сотрудников занимают руководящую должность?
+											</div>
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Ваш общий стаж работы в&nbsp;должности руководителя.
+											</div>
+											<div class="form-wrap__input-wrap form-group select-block-wrapper">
+												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
+													<option>Выберите </option>
+													<option> Выберите 1</option>
+													<option> Выберите 2</option>
+													<option> Выберите 3</option>
+													<option> Выберите 4</option>
+													<option> Выберите 5</option>
+													<option> Выберите 6</option>
+													<option> Выберите 7</option>
+												</select>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Ваш управленческий стаж в&nbsp;Правительстве Москвы
+											</div>
+											<div class="form-wrap__input-wrap form-group select-block-wrapper">
+												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
+													<option>Выберите </option>
+													<option> Выберите 1</option>
+													<option> Выберите 2</option>
+													<option> Выберите 3</option>
+													<option> Выберите 4</option>
+													<option> Выберите 5</option>
+													<option> Выберите 6</option>
+													<option> Выберите 7</option>
+												</select> 
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Сколько часов в&nbsp;неделю&nbsp;Вы готовы посвящать обучению в&nbsp;программе?
+											</div>
+											<div class="form-wrap__input-wrap form-group select-block-wrapper">
+												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
+													<option>Выберите </option>
+													<option> Выберите 1</option>
+													<option> Выберите 2</option>
+													<option> Выберите 3</option>
+													<option> Выберите 4</option>
+													<option> Выберите 5</option>
+													<option> Выберите 6</option>
+													<option> Выберите 7</option>
+												</select> 
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Какие свои управленческие качества&nbsp;Вы можете назвать сильными?
+											</div>
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Какие зоны собственного развития как руководителя&nbsp;Вы видите?
+											</div>
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Какая из&nbsp;перечисленных управленческих сложностей для Вас актуальнее всего на&nbsp;данный момент?
+											</div>
+											<div class="form-wrap__input-wrap form-group select-block-wrapper">
+												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите 3 варианта " multiple="multiple"> 
+													<option>Выберите 3 варианта </option>
+													<option> Выберите 3 варианта 1</option>
+													<option> Выберите 3 варианта 2</option>
+													<option> Выберите 3 варианта 3</option>
+													<option> Выберите 3 варианта 4</option>
+													<option> Выберите 3 варианта 5</option>
+													<option> Выберите 3 варианта 6</option>
+													<option> Выберите 3 варианта 7</option>
+												</select>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Опишите кратко задачу в&nbsp;сфере управления своей командой, которую&nbsp;Вы готовы решить до&nbsp;конца 2024&nbsp;года. Это поможет нам оценить потенциальную пользу программы &laquo;Урбан Лидер&raquo; и&nbsp;Кадровых сервисов Правительства Москвы в&nbsp;решении Вашей задачи.
+											</div>
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__group">
+											<div class="form-wrap__group-title h6">Сформулируйте приоритетные цели, которых&nbsp;Вы хотели&nbsp;бы достичь благодаря обучению.
+											</div>
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea><span class="maxLength" data-textareaid="myTextarea3" data-warnclass="warning" data-warnthreshold="40"></span><span class='maxLength' data-textareaid='myTextarea3' data-string="/"></span>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<button class="btn btn-primary w-100">Отправить</button>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -85,10 +210,51 @@
 			<script>addBlock(`footer`)</script>
 			<div id="footerWrap"></div>
 		</div>
+		<!--  start modals-->
+		<div id="modal-call" style="display: none">
+			<div class="modal-win">
+				<div class="form-wrap">
+					<form>
+						<div class="text-center">
+							<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+							</div>
+							<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Ваше Имя" required="required"/> 
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn" type="submit"> 
+						</button>
+						<div class="form-wrap__policy">
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+						<div class="form-wrap__policy">
+							<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-thank" style="display: none">
+			<div class="modal-win text-center">
+				<div class="modal-win__title h3 strong">Спасибо, Ваша анкета принята к рассмотрению
+				</div>
+				<div class="h6 fw-400">Совсем скоро Вы получите письмо по следующим шагам.</div><br/>
+				<div class="modal-win__footer small strong">При возникновении вопросов обращайтесь на почту<br/><a href="mailto:UrbanLeader@manage.mos.ru">UrbanLeader@manage.mos.ru</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
 		<script src="libs/swiper/swiper-bundle.min.js"> </script>
 		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/select2/js/select2.min.js"></script>
+		<script src="js/maxLength.min.js"></script>
 		<script src="js/JSCCommon.js"></script>
 		<script src="js/common.js"></script>
 	</body>

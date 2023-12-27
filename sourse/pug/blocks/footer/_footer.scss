@@ -1,9 +1,17 @@
 .footer {
 		
 	margin-top: auto;
-// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	@include media-breakpoint-down(md) {
+		margin-bottom: rem(70);
+	}
+--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
 	// --sTPB: #{rem()};
+	color: var(--Grey-Dark, #80879B);
+	.container{
+		border-top: 1px solid #C9CAD1;
+		padding-block: rem(16);
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);

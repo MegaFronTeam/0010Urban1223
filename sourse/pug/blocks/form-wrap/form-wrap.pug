@@ -8,10 +8,10 @@ mixin input(placeholder,  t='text', label, inputmode= t, name= t)
 		if t== "textarea"
 			+e.TEXTAREA.input.form-control(name=name placeholder=placeholder)
 		else if t== "select"
-			+e.SELECT.input.form-select( name= name)&attributes(attributes)
-				option(value= placeholder)= placeholder
-				- for (var x = 1; x < 5; x++)
-					option(value=` placeholder ${x}`)= `placeholder ${x}`
+			+e.SELECT.input.form-select( name= name data-placeholder= placeholder)&attributes(attributes) 
+				option()= placeholder
+				- for (var x = 1; x < 8; x++)
+					option()= ` ${placeholder + x}`
 		else if t=='file'
 			+e.INPUT.input.form-control(inputmode= inputmode name=name type=t)&attributes(attributes)
 			
@@ -21,7 +21,7 @@ mixin input(placeholder,  t='text', label, inputmode= t, name= t)
 			+e.INPUT.input.form-control(inputmode= inputmode name=name type=t )&attributes(attributes)
 		else
 			+e.INPUT.input.form-control(inputmode= inputmode name=name type=t placeholder=placeholder)&attributes(attributes)
-	+e.input-wrap.form-group
+	+e.input-wrap.form-group(class= (t=="select" ? 'select-block-wrapper' : ' '))
 		if label
 			label
 				+e.SPAN.input-title= label

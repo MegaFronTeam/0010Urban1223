@@ -3,7 +3,7 @@ mixin topLine()
 	+b.topLine.section#topLine&attributes(attributes)
 		+e.container
 			.container
-				.row
+				+e.row.row
 					.col
 						+e.logo(href="#"): +img('img/logo.svg')
 					.col-auto

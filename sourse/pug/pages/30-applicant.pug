@@ -10,11 +10,11 @@ include ../blocks/sPolling/_sPolling.pug
 include ../blocks/sCatalog/_sCatalog.pug
 
 block variables
-	- let  mainPage= 'main-page main-page' 
-	- let  bg= null
+	- let  mainPage= 'bg-gray' 
+	- let  bg= 'polling.jpg'
 
 block title
-	- let  title= index.head.title
+	- let  title= "Анкетирование"
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -22,7 +22,7 @@ block pagecontent
 	
 	+parts('header')
 	main
-		.container
+		.container.px-0
 			+stepsRow(
 					{class: "past", name: "Подача заявки",date: "21 нояб"},
 					{class: "past", name: "Анкетирование",date: "с 30 нояб по 2 дек"},

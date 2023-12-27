@@ -1,2 +1,3 @@
-1. <https://megafronteam.github.io/RepoName/public/>
-2. <https://megafronteam.github.io/RepoName/public/00-modal.html>
+1. <https://megafronteam.github.io/0010Urban1223/> 
+2. <https://megafronteam.github.io/0010Urban1223/30-applicant> 
+3. <https://megafronteam.github.io/0010Urban1223/30-1-test> 

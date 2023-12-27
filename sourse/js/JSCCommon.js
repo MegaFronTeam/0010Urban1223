@@ -14,6 +14,7 @@ class JSCCommon {
 			arrows: false,
 			// // infobar: false,
 			touch: false,
+			compact: false,
 			trapFocus: false,
 			placeFocusBack: false,
 			infinite: false,

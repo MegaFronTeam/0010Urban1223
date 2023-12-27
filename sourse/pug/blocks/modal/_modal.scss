@@ -11,9 +11,10 @@
 	background-color: #fff;
 	max-width: 100%;
 	position: relative;
-	width: rem(500);
+	width: rem(603);
 	// min-height: 100%; 
-	padding: 40px;
+	border-radius: 8px;
+	padding: 56px rem(32);
 
 	.modal-content {
 		// max-width: 485px;
@@ -173,4 +174,22 @@ a {
     transform: translate3d(0, 10%, 0);
     opacity: 0;
   }
+}
+
+@include media-breakpoint-down(md) {
+	.modal-win{
+		border-radius: 0;
+		height: 100%;
+	}
+	.fancybox__content{
+		height: 100%;
+	}
+	.fancybox__slide{
+		align-items: flex-start;
+		padding: 0 !important;
+		&::before,
+		&::after{
+			display: none;
+		}
+	}
 }

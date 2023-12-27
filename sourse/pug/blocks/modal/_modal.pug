@@ -13,6 +13,15 @@ mixin modal()
 				+policy()
 				+policy()
 	// #modal-call
+	div(id="modal-thank"  style="display: none" )
+		+b.modal-win.text-center
+			+e.title.h3.strong Спасибо, Ваша анкета принята к рассмотрению
+			.h6.fw-400 Совсем скоро Вы получите письмо по следующим шагам.
+			br
+			+e.footer.small.strong При возникновении вопросов обращайтесь на почту
+				br
+				a(href="mailto:UrbanLeader@manage.mos.ru") UrbanLeader@manage.mos.ru
+	// #modal-call
 
 	
 	// end modals
