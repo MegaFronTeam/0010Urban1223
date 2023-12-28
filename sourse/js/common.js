@@ -100,8 +100,8 @@ function eventHandler() {
 		const scheduleSlider = new Swiper('.sSchedule__slider', {
 			slidesPerView: 1,
 			breakpoints: {
-				992: {
-					slidesPerView: 7,
+				576: {
+					slidesPerView: 'auto',
 				},
 			},
 			navigation: {
@@ -119,7 +119,11 @@ function eventHandler() {
 		});
 	})
 
-
+	$(document).on("click", ".sSchedule__time", function(){
+		$(this).toggleClass("sSchedule__time--cancel")
+		// $(this).slideToggle(()=>{
+		// })
+	})
 };
 
 if (document.readyState !== 'loading') {

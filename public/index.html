@@ -74,15 +74,17 @@
 				<!-- start sSchedule-->
 				<section class="sSchedule section" id="sSchedule">
 					<div class="container">
-						<div class="sSchedule__row row">
-							<div class="col-4">
-								<div class="sSchedule__input-wrap form-group"><input class="sSchedule__input form-control" inputmode="date" name="date" type="date"/>
+						<div class="sSchedule__head">
+							<div class="sSchedule__row row">
+								<div class="col-md-4">
+									<div class="sSchedule__input-wrap form-group"><input class="sSchedule__input form-control" inputmode="date" name="date" type="date"/>
+									</div>
+									<!-- +e.input-wrap-->
 								</div>
-								<!-- +e.input-wrap-->
-							</div>
-							<div class="col-4 text-center">
-								<div class="section-title">
-									<h2>Ноябрь</h2>
+								<div class="col-md-4 text-center">
+									<div class="section-title">
+										<h2>Ноябрь</h2>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -92,10 +94,14 @@
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day sSchedule__day--current"><span>13</span>вт
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">09:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">12:00
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>14</span>ср
@@ -106,38 +112,58 @@
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>15</span>чт
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">11:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">11:30
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">12:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">12:30
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>11:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>11:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>16</span>пт
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">13:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">16:00
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>13:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>17</span>сб
 										</div>
-										<div class="sSchedule__time sSchedule__time--cancel"><span>15:00</span>
+										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
 											</a>
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">15:30
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">16:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">16:30
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">17:00
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>15:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>17:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>18</span>вс
@@ -148,28 +174,42 @@
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>19</span>пн
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">08:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">09:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">09:30
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>20</span>вт
 										</div>
-										<div class="sSchedule__time sSchedule__time--cancel"><span>15:00</span>
+										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
 											</a>
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">15:30
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">16:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">16:30
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">17:00
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>15:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>17:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>21</span>ср
@@ -180,12 +220,18 @@
 									<div class="sSchedule__slide swiper-slide">
 										<div class="sSchedule__day"><span>22</span>чт
 										</div>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">08:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">09:00
-										</a>
-										<a class="sSchedule__time btn btn-outline-primary" href="#">09:30
-										</a>
+										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
