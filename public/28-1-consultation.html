@@ -25,7 +25,7 @@
 			}
 		</script>
 	</head>
-	<body class="bg-gray" data-bg="polling.jpg">
+	<body data-bg="polling.jpg">
 		<div class="main-wrapper">
 			<script>addBlock(`header`)</script>
 			<div id="headerWrap"></div>
@@ -71,141 +71,258 @@
 						</ul>
 					</div>
 				</div>
-				<!-- start sPolling-->
-				<section class="sPolling section" id="sPolling">
+				<!-- start sSchedule-->
+				<section class="sSchedule section" id="sSchedule">
+					<div class="sSchedule__title">Запись на консультацию
+					</div>
 					<div class="container">
-						<div class="panel-block">
-							<div class="form-wrap">
-								<form>
-									<div class="form-wrap__head text-center">
-										<h2>Анкетирование</h2>
+						<div class="sSchedule__head">
+							<div class="sSchedule__row row">
+								<div class="col-md-4">
+									<div class="sSchedule__input-wrap form-group"><input class="sSchedule__input form-control" inputmode="date" name="date" type="date"/>
 									</div>
-									<div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Укажите, пожалуйста, сколько сотрудников находится в&nbsp;Вашем подчинении:
-											</div>
-											<div class="form-wrap__input-wrap form-group">
-												<label><span class="form-wrap__input-title">В прямом</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
-												</label>
-											</div>
-											<!-- +e.input-wrap-->
-											<div class="form-wrap__input-wrap form-group">
-												<label><span class="form-wrap__input-title">В функциональном</span><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
-												</label>
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Сколько из&nbsp;указанных сотрудников занимают руководящую должность?
-											</div>
-											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Введите числовое значение"/>
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Ваш общий стаж работы в&nbsp;должности руководителя.
-											</div>
-											<div class="form-wrap__input-wrap form-group select-block-wrapper">
-												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
-													<option>Выберите </option>
-													<option> Выберите 1</option>
-													<option> Выберите 2</option>
-													<option> Выберите 3</option>
-													<option> Выберите 4</option>
-													<option> Выберите 5</option>
-													<option> Выберите 6</option>
-													<option> Выберите 7</option>
-												</select>
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Ваш управленческий стаж в&nbsp;Правительстве Москвы
-											</div>
-											<div class="form-wrap__input-wrap form-group select-block-wrapper">
-												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
-													<option>Выберите </option>
-													<option> Выберите 1</option>
-													<option> Выберите 2</option>
-													<option> Выберите 3</option>
-													<option> Выберите 4</option>
-													<option> Выберите 5</option>
-													<option> Выберите 6</option>
-													<option> Выберите 7</option>
-												</select> 
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Сколько часов в&nbsp;неделю&nbsp;Вы готовы посвящать обучению в&nbsp;программе?
-											</div>
-											<div class="form-wrap__input-wrap form-group select-block-wrapper">
-												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите "> 
-													<option>Выберите </option>
-													<option> Выберите 1</option>
-													<option> Выберите 2</option>
-													<option> Выберите 3</option>
-													<option> Выберите 4</option>
-													<option> Выберите 5</option>
-													<option> Выберите 6</option>
-													<option> Выберите 7</option>
-												</select> 
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Какие свои управленческие качества&nbsp;Вы можете назвать сильными?
-											</div>
-											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Какие зоны собственного развития как руководителя&nbsp;Вы видите?
-											</div>
-											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Какая из&nbsp;перечисленных управленческих сложностей для Вас актуальнее всего на&nbsp;данный момент?
-											</div>
-											<div class="form-wrap__input-wrap form-group select-block-wrapper">
-												<select class="form-wrap__input form-select" name="select" data-placeholder="Выберите 3 варианта " multiple="multiple"> 
-													<option>Выберите 3 варианта </option>
-													<option> Выберите 3 варианта 1</option>
-													<option> Выберите 3 варианта 2</option>
-													<option> Выберите 3 варианта 3</option>
-													<option> Выберите 3 варианта 4</option>
-													<option> Выберите 3 варианта 5</option>
-													<option> Выберите 3 варианта 6</option>
-													<option> Выберите 3 варианта 7</option>
-												</select>
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Опишите кратко задачу в&nbsp;сфере управления своей командой, которую&nbsp;Вы готовы решить до&nbsp;конца 2024&nbsp;года. Это поможет нам оценить потенциальную пользу программы &laquo;Урбан Лидер&raquo; и&nbsp;Кадровых сервисов Правительства Москвы в&nbsp;решении Вашей задачи.
-											</div>
-											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea> 
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<div class="form-wrap__group">
-											<div class="form-wrap__group-title h6">Сформулируйте приоритетные цели, которых&nbsp;Вы хотели&nbsp;бы достичь благодаря обучению.
-											</div>
-											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Введите Ваш текст "></textarea><span class="maxLength" data-textareaid="myTextarea3" data-warnclass="warning" data-warnthreshold="40"></span><span class='maxLength' data-textareaid='myTextarea3' data-string="/"></span>
-											</div>
-											<!-- +e.input-wrap-->
-										</div>
-										<button class="btn btn-primary w-100">Отправить</button>
+									<!-- +e.input-wrap-->
+								</div>
+								<div class="col-md-4 text-center">
+									<div class="section-title">
+										<h2>Ноябрь</h2>
 									</div>
-								</form>
+								</div>
+							</div>
+						</div>
+						<div class="sSchedule__slider-wrap">
+							<div class="sSchedule__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day sSchedule__day--current"><span>13</span>вт
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>14</span>ср
+												</div>
+											</div>
+										</div>
+										<div class="sSchedule__empty">Запись недоступна
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>15</span>чт
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>11:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>11:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>12:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>16</span>пт
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>13:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>17</span>сб
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>15:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>17:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>18</span>вс
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__empty">Запись недоступна
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>19</span>пн
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>20</span>вт
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>15:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>16:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>17:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>21</span>ср
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="sSchedule__btn-order btn btn-primary" data-fancybox="modal" href="#modal-order-time">
+												</a>
+											</div>
+										</div>
+										<div class="sSchedule__empty">Запись недоступна
+										</div>
+									</div>
+									<div class="sSchedule__slide swiper-slide">
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>22</span>чт
+												</div>
+											</div>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+										<div class="sSchedule__time btn btn-outline-primary"><span>09:30</span>
+											<a class="sSchedule__cancel-btn" href="#">Отменить
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+								<svg class="icon icon-chevron-left ">
+									<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+								</svg>
+							</div>
+							<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+								<svg class="icon icon-chevron-right ">
+									<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+								</svg>
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- end sPolling-->
+				<!-- end sSchedule-->
 			</main>
 			<script>addBlock(`footer`)</script>
 			<div id="footerWrap"></div>

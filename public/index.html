@@ -92,7 +92,11 @@
 							<div class="sSchedule__slider swiper">
 								<div class="swiper-wrapper">
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day sSchedule__day--current"><span>13</span>вт
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day sSchedule__day--current"><span>13</span>вт
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary"><span>09:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -104,13 +108,21 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>14</span>ср
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>14</span>ср
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__empty">Запись недоступна
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>15</span>чт
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>15</span>чт
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary"><span>11:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -130,7 +142,11 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>16</span>пт
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>16</span>пт
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary"><span>13:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -142,7 +158,11 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>17</span>сб
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>17</span>сб
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -166,13 +186,21 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>18</span>вс
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>18</span>вс
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__empty">Запись недоступна
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>19</span>пн
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>19</span>пн
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -188,7 +216,11 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>20</span>вт
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>20</span>вт
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary sSchedule__time sSchedule__time--cancel"><span>15:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -212,13 +244,21 @@
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>21</span>ср
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>21</span>ср
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__empty">Запись недоступна
 										</div>
 									</div>
 									<div class="sSchedule__slide swiper-slide">
-										<div class="sSchedule__day"><span>22</span>чт
+										<div class="row">
+											<div class="col">
+												<div class="sSchedule__day"><span>22</span>чт
+												</div>
+											</div>
 										</div>
 										<div class="sSchedule__time btn btn-outline-primary"><span>08:00</span>
 											<a class="sSchedule__cancel-btn" href="#">Отменить
@@ -283,10 +323,138 @@
 		<!-- #modal-call-->
 		<div id="modal-thank" style="display: none">
 			<div class="modal-win text-center">
-				<div class="modal-win__title h3 strong">Спасибо, Ваша анкета принята к рассмотрению
+				<div class="modal-win__title h3"><strong>Спасибо, Ваша анкета принята к рассмотрению</strong>
 				</div>
 				<div class="h6 fw-400">Совсем скоро Вы получите письмо по следующим шагам.</div><br/>
 				<div class="modal-win__footer small strong">При возникновении вопросов обращайтесь на почту<br/><a href="mailto:UrbanLeader@manage.mos.ru">UrbanLeader@manage.mos.ru</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-order" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3"><strong>Вы записаны на 15 ноября 16:00</strong>
+				</div>
+				<div class="h6 fw-400">СС вами свяжутся для начала консультации.</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-time" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3">Вы подтверждаете запись на <strong>18 декабря в 17:00</strong>?
+				</div>
+				<div class="modal-win__btns text-center"> <a class="btn btn-primary" href="#">Да</a><a class="btn btn-outline-primary" href="#">Нет</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-time2" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3">Вы уже записаны на <strong>15 ноября 16:00</strong>.  <br/>Отменить запись и записаться <br/>на 14 ноября 15:00?
+				</div>
+				<div class="modal-win__btns text-center"> <a class="btn btn-primary" href="#">Да</a><a class="btn btn-outline-primary" href="#">Нет</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-cancel" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3">Вы уверены, что хотите отменить запись  на <strong>15 ноября 16:00</strong>?
+				</div>
+				<div class="modal-win__btns text-center"> <a class="btn btn-primary" href="#">Отменить запись</a><a class="btn btn-outline-primary" href="#">Не отменять запись</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-cancel2" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3"><strong>Запись отменена</strong>
+				</div>
+				<div class="h6 fw-400">Для записи выберите удобное время.</div>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<div id="modal-order-time" style="display: none">
+			<div class="modal-win modal-win--lg text-center">
+				<div class="modal-win__title h3"><strong>Выберите время для приема</strong>
+				</div><b class="time-block">
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">08:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">08:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">09:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time" disabled="disabled"/><span class="time-item__text btn btn-outline-primary">10:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time" disabled="disabled"/><span class="time-item__text btn btn-outline-primary">10:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time" disabled="disabled"/><span class="time-item__text btn btn-outline-primary">11:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time" disabled="disabled"/><span class="time-item__text btn btn-outline-primary">11:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time" disabled="disabled"/><span class="time-item__text btn btn-outline-primary">12:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">12:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">13:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">13:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">14:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">14:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">15:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">15:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">16:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">16:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">17:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">17:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">18:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">18:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">19:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">19:30</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">20:00</span>
+						</label>
+						<label class="time-item">
+							<input class="btn-check" type="radio" name="time"/><span class="time-item__text btn btn-outline-primary">20:30</span>
+						</label></b>
+				<div class="modal-win__btns text-center"> 
+					<button class="btn btn-outline-primary modal-close-js">Закрыть</button><a class="btn btn-primary" href="#">Сохранить</a>
 				</div>
 			</div>
 		</div>

@@ -623,3 +623,66 @@ select[multiple] {
 		padding-right: 16px;
 	}
 }
+
+.m-1{
+	margin: .1rem;
+}
+
+
+.time-block{
+	display: grid;
+	gap: 8px;
+	margin-top: 22px;
+	grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+}
+
+.time-item{
+	position: relative;
+	display: block;
+	cursor: pointer;
+	input{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	&__text{
+		z-index: 2;
+		position: relative;
+		cursor: pointer;
+		font-size: 17px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		// color: $primary;
+		// border: 1px solid  $primary;
+		padding-left: 1rem;
+		padding-right: .6rem;
+		font-weight: bold;
+		border-radius: 24px;
+		justify-content: space-between;
+
+		&:hover{
+			background-color: $primary !important;
+			color: #fff !important;
+			border-color: $primary !important;
+		}
+	}
+	input:disabled ~ .btn{
+		opacity: 1;
+		background: var(--Grey-Light, #EDEFF3);
+		border-color: #EDEFF3;
+		color: $body-color;
+		&::after{
+			content: '';
+			background-image: $btn-close-bg;
+			width: rem(24);
+			height: rem(24);
+			background-repeat: no-repeat;
+			background-size: 50%;
+			background-position: center;
+
+		}
+	}
+}
