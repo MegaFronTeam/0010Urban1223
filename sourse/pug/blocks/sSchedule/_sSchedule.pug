@@ -23,7 +23,10 @@ mixin sSchedule(title)
 			+e.head
 				+e.row.row
 					.col-md-4
-						+input('Выберите дату','date')
+						//- +input('Выберите дату','date')
+						.data-picker-wrap
+								+input("Выберите дату",'text')(required readonly autocomplete="off"  class="date-input").data-picker--js
+									+icon('calendar')
 					.col-md-4.text-center
 						+b.section-title
 							h2 Ноябрь
