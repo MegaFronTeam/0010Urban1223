@@ -13,7 +13,8 @@ mixin time(time,cancel)
 	+e.time.btn.btn-outline-primary(class= (cancel ? 'sSchedule__time--cancel' : ""))
 		span= time
 		+e.toggle-block
-			.small.strong Иванов Игорь Михайлович
+			
+			+e.name.small.strong Иванов Игорь Михайлович
 			+e.link(href="#")
 				+icon('open')
 				+e.text-link ivanovivanov@edu.mos.ru

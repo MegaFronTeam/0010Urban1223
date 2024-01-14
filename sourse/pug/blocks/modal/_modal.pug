@@ -74,7 +74,7 @@ mixin modal()
 	div(id="modal-order-time"  style="display: none" )
 		+b.modal-win--lg.text-center
 			+e.title.h3: strong Выберите время для приема
-			b.time-block
+			+b.time-block
 				mixin time(t)
 					+b.LABEL.time-item
 						input(type="radio" name="time").btn-check&attributes(attributes)
@@ -105,8 +105,8 @@ mixin modal()
 				+time(`20:00`)
 				+time(`20:30`)
 			+e.btns.text-center 
-				button.btn.btn-outline-primary.modal-close-js Закрыть
 				a.btn.btn-primary(href="#") Сохранить
+				button.btn.btn-outline-primary.modal-close-js.order-md-first Закрыть
 	// #modal-call
 
 	

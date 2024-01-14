@@ -113,6 +113,8 @@ body {
 }
 main{
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 }
 // .main-wrapper__inner{
 // 	// overflow-x: hidden;
@@ -633,7 +635,11 @@ select[multiple] {
 	display: grid;
 	gap: 8px;
 	margin-top: 22px;
-	grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+	@include media-breakpoint-up(sm){
+
+		grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+	} 
+	grid-template-columns: repeat(2 ,1fr);
 }
 
 .time-item{
