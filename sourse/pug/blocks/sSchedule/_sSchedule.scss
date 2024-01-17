@@ -42,6 +42,11 @@
 		background-repeat: no-repeat;
 	}
 	@include media-breakpoint-down(md) {
+		&__title ~ .container {
+			.form-control{
+				border: none;
+			}
+		}
 		&__title ~ .container .section-title{
 			// margin-top: 30px;
 			padding-top: 20px;
@@ -123,9 +128,9 @@
 		text-align: left;
 		line-height: 1;
 		@include media-breakpoint-down(md) {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			// display: flex;
+			// justify-content: space-between;
+			// align-items: center;
 		}
 		.sSchedule__toggle-block{
 			display: none;
@@ -187,14 +192,18 @@
 	&__head{
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 1142px;
+		// padding-right: 40px;
+		@include media-breakpoint-up(md){
+			// max-width: 1172px;\
+			padding-inline: 54px;
+		}
 		@include media-breakpoint-down(md){
 			border-bottom: 1px solid #C9CAD1;
 		}
 	}
 	&__input-wrap{
 		@include media-breakpoint-up(md){
-			max-width: 249px;
+			// max-width: 249px;
 			margin-bottom: 0;
 		}
 		// margin-bottom: rem(24);
@@ -208,6 +217,7 @@
 		position: relative;
 		border-radius: 50%;
 		padding: 0;
+		top: rem(-2);
 		&::before,
 		&::after{
 			content: '';

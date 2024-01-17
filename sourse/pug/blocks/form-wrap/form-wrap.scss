@@ -92,11 +92,14 @@ input::-webkit-inner-spin-button {
 .data-picker-wrap{
   position: relative;
 	width: 249px;
-	@include media-breakpoint-down(xs) {
+	input::placeholder{
+		color: $body-color;
+	}
+	@include media-breakpoint-down(md) {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		max-width: 328px;
+		// max-width: 328px;
 	}
 	&::after{
 		content: '';
@@ -147,6 +150,8 @@ input::-webkit-inner-spin-button {
     --adp-cell-color-selected-hover:  var(--Black, #000);
     --adp-day-name-color: #000;
 		--adp-month-cell-height: 68px;
+
+		--adp-width: 100%;
   }
 
   .air-datepicker-cell.-selected- {

@@ -14,9 +14,12 @@
 	width: rem(603);
 	&__btns{
 		margin-top: rem(40);
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include media-breakpoint-up(sm) {
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 		.btn{
 			padding-left: 10px;
 			padding-right: 10px;
