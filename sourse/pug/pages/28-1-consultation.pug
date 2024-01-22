@@ -11,7 +11,7 @@ include ../blocks/sSchedule/_sSchedule.pug
 
 block variables
 	- let  mainPage= '' 
-	- let  bg= 'polling.jpg'
+	//- - let  bg= 'polling.jpg'
 
 block title
 	- let  title= "Анкетирование"
@@ -31,7 +31,7 @@ block pagecontent
 					{class: "next", name: "Оценка",date: "с 21 дек по 22 дек"},
 					{class: "next", name: "Вы зачислены",date: "23 дек"}
 				) 
-		+sSchedule('Запись на консультацию')
+		+sSchedule28('Запись на консультацию')
 	+parts('footer')
       
 
