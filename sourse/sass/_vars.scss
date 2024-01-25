@@ -305,7 +305,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: #80879b;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -981,7 +981,7 @@ $form-check-input-border: var(--#{$prefix}border-width) solid
 $form-check-input-border-radius: 0.25em !default;
 $form-check-radio-border-radius: 50% !default;
 $form-check-input-focus-border: $input-focus-border-color !default;
-$form-check-input-focus-box-shadow: $focus-ring-box-shadow !default;
+$form-check-input-focus-box-shadow: none;
 
 $form-check-input-checked-color: $component-active-color !default;
 $form-check-input-checked-bg-color: $component-active-bg !default;

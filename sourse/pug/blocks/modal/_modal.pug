@@ -57,7 +57,7 @@ mixin modal()
 	
 	div(id="modal-cancel"  style="display: none" )
 		+b.modal-win--lg.text-center
-			+e.title.h3 Вы уверены, что хотите отменить запись  на #[strong 15 ноября 16:00]?
+			+e.title.h3 Вы уверены, что хотите отменить запись <br> на #[strong 15 ноября 16:00]?
 			+e.btns.text-center 
 				a.btn.btn-primary(href="#") Отменить запись
 				a.btn.btn-outline-primary(href="#") Не отменять запись
@@ -115,14 +115,14 @@ mixin modal()
 			+e.title.h3.text-center: strong Выберите время для приема
 			+b.time-block
 				mixin time(t)
-					+b.time-item-moderator(data-max-value='4' )&attributes(attributes)
+					+b.time-item-moderator(data-max-value='4' data-min-value="2")&attributes(attributes)
 						+e.head.row
 							
 							+e.time.col= t
 							+e.info.col-auto
 								+icon("info")
 								+e.dropdown Чтобы уменьшить количество записи людей, нужно удалить часть существующих записей.
-							.col-auto: +e.count 0/4
+							.col-auto: +e.count 2/4
 						+e.body
 							+e.text Кол-во записей
 							+addblock()
@@ -171,7 +171,7 @@ mixin modal()
 	// #modal-call
 	div(id="modal-order-people"  style="display: none" )
 		+b.modal-win--list
-			+e.title.h3.text-center Запись на 15 ноября (четверг) 15:00
+			+e.title.h3.text-center: .strong Запись на 15 ноября (четверг) 15:00
 			+b.table 
 				+e.tr
 					+e.td--check
@@ -197,15 +197,15 @@ mixin modal()
 							+e.btn.btn.btn-secondary(type="button"  href="#modal-delete2" ).link-modal-js Удалить
 
 
-			+e.btns.text-center 
-				a.btn.btn-primary(href="#") Сохранить
-				button.btn.btn-outline-primary.modal-close-js.order-md-first Закрыть
+			//- +e.btns.text-center 
+			//- 	a.btn.btn-primary(href="#") Сохранить
+			//- 	button.btn.btn-outline-primary.modal-close-js.order-md-first Закрыть
 
 	// #modal-call
 	
 	div(id="modal-order-people2"  style="display: none" )
 		+b.modal-win--list
-			+e.title.h3.text-center Запись на 15 ноября (четверг) 15:00
+			+e.title.h3.text-center: .strong Запись на 15 ноября (четверг) 15:00
 			+b.table 
 			
 

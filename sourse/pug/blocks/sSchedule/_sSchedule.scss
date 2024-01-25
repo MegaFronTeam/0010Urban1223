@@ -146,6 +146,7 @@
       border-bottom: 1px solid var(--Grey-Medium, #c9cad1) !important;
       border-radius: 0;
       padding: 16px 0;
+      margin-bottom: 0;
       .row {
         align-items: center;
         --bs-gutter-x: 10px;
@@ -217,7 +218,7 @@
     // padding-right: 40px;
     @include media-breakpoint-up(md) {
       // max-width: 1172px;\
-      padding-inline: 54px;
+      padding-inline: 43px;
     }
     @include media-breakpoint-down(md) {
       border-bottom: 1px solid #c9cad1;
@@ -233,7 +234,8 @@
   &__btn-order {
     --bs-btn-color: #{$primary};
     --bs-btn-bg: rgba(110, 224, 217, 0.4);
-    --bs-btn-border-color: rgba(110, 224, 217, 0.4);
+    // --bs-btn-border-color: rgba(110, 224, 217, 0.4);
+    border: none;
     width: 24px;
     height: 24px;
     position: relative;
@@ -246,7 +248,7 @@
     &::before,
     &::after {
       content: "";
-      width: 16px;
+      width: 14px;
       height: 2px;
       background-color: currentColor;
       @include a-cent1;

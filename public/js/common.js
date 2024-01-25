@@ -149,50 +149,53 @@ function eventHandler() {
       },
     });
   }
-  let times = document.querySelectorAll(".time-item-moderator");
+  // let times = document.querySelectorAll(".time-item-moderator");
 
-  if (times) {
-    times.forEach((element) => {
-      let input = element.querySelector("input");
-      let max = element.dataset.maxValue;
-      const btnMinus = element.querySelector(".addBlock__btn--minus");
-      const btnPlus = element.querySelector(".addBlock__btn--plus");
-      btnMinus.addEventListener("click", function () {
-        setValue(input, +max, -1);
-      });
+  // if (times) {
+  //   times.forEach((element) => {
+  //     let input = element.querySelector("input");
+  //     let max = element.dataset.maxValue;
+  //     let min = element.dataset.maxValue;
+  //     const btnMinus = element.querySelector(".addBlock__btn--minus");
+  //     const btnPlus = element.querySelector(".addBlock__btn--plus");
+  //     btnMinus.addEventListener("click", function () {
+  //       setValue(input, +max, +min, -1);
+  //     });
 
-      btnPlus.addEventListener("click", function () {
-        setValue(input, +max);
-      });
+  //     btnPlus.addEventListener("click", function () {
+  //       setValue(input, +max, +min);
+  //     });
 
-      function setValue(input, max, status = 1) {
-        let value = input.value;
-        if (status < 1) {
-          value = value > 0 ? +value + status : 0;
-        } else {
-          value = value < max ? +value + status : max;
-        }
-        input.value = value;
-        element.querySelector(
-          ".time-item-moderator__count"
-        ).innerHTML = `${value}/${max}`;
+  //     function setValue(input, max, min, status = 1) {
+  //       let value = input.value;
+  //       if (status < 1 && status > min) {
+  //         value = value > 0 ? +value + status : 0;
+  //       } else if (status < min) {
+  //         value = value > min ? +value + status : min;
+  //       } else {
+  //         value = value < max ? +value + status : max;
+  //       }
+  //       input.value = value;
+  //       element.querySelector(
+  //         ".time-item-moderator__count"
+  //       ).innerHTML = `${value}/${max}`;
 
-        if (+value > 0) {
-          input.classList.add("active");
-          btnMinus.classList.add("active");
-        } else {
-          input.classList.remove("active");
-          btnMinus.classList.remove("active");
-        }
-        console.log(value);
-        if (+value == max) {
-          btnPlus.classList.add("disabled");
-        } else {
-          btnPlus.classList.remove("disabled");
-        }
-      }
-    });
-  }
+  //       if (+value > 0 || +value > min) {
+  //         input.classList.add("active");
+  //         btnMinus.classList.add("active");
+  //       } else {
+  //         input.classList.remove("active");
+  //         btnMinus.classList.remove("active");
+  //       }
+  //       console.log(value);
+  //       // if (+value == max) {
+  //       //   btnPlus.classList.add("disabled");
+  //       // } else {
+  //       //   btnPlus.classList.remove("disabled");
+  //       // }
+  //     }
+  //   });
+  // }
 
   const mainCheck = document.querySelector(".main-check");
 
